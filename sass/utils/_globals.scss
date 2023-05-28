@@ -1,0 +1,50 @@
+* {
+  outline: none;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  color: $color-light-black;;
+}
+
+ul {
+  list-style: none;
+}
+
+.section {
+  padding: 94px 0px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.title {
+  margin-bottom: 50px;
+  font-size: 36px;
+  text-align: center;
+}
+
+/* Social icons */
+
+.social-icons {
+  display: flex;
+  gap: 10px;
+}
+
+.social-icon {
+  display: block;
+  padding: 12px;
+  font-size: 0;
+  border-radius: 50%;
+  transition: background-color $transition-set;
+}
+
+.social-icon:is(:hover, :focus) {
+  background-color: $color-blue;
+  color: $color-white;
+}

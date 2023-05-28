@@ -1,0 +1,91 @@
+.nav {
+  display: flex;
+  color: $color-light-black;
+  font-size: 14px;
+  line-height: 1.14;
+  align-items: center;
+  gap: 93px;
+  justify-content: center;
+
+  &__list {
+    display: flex;
+    gap: 46px;
+    justify-content: center;
+    align-items: center;
+    color: $color-light-black;
+    font-size: 14px;
+    line-height: 1.14;
+    list-style: none;
+  }
+
+  &__link {
+    position: relative;
+    color: $color-light-black;
+    transition: color $transition-set;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+  }
+
+  &__link:is(:hover, :focus) {
+    color: $color-blue;
+  }
+
+  &__link--active {
+    color: $color-blue;
+  }
+
+  &__link--active::after {
+    content: '';
+    display: inline-block;
+    width: 100%;
+    left: 0;
+    margin-top: 45px;
+    position: absolute;
+    border-bottom: solid 4px $color-blue;
+    border-radius: 2px;
+  }
+}
+
+.header > .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header {
+  border-bottom: 1px solid #ececec;
+  padding: 24px 0 25px;
+}
+
+.contact {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  list-style: none;
+  text-decoration: none;
+  color: $color-gray;
+
+  &__item:is(:hover, :focus) {
+    color: $color-blue;
+    transition: color $transition-set;
+  }
+
+  &__item {
+    text-emphasis: none;
+    text-decoration: none;
+    color: $color-gray;
+    fill: currentColor;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.17;
+    text-decoration: none;
+  }
+
+  &__icon {
+    vertical-align: middle;
+    margin-right: 10px;
+  }
+}
